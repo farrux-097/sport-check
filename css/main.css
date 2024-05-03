@@ -1,0 +1,88 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid indigo;
+  border-radius: 10px;
+}
+
+.check-label {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 1px solid indigo;
+  border-radius: 23px;
+  padding: 5px;
+}
+
+.check-circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.check-input:checked ~ .check-circle {
+  background-image: url(../images/img-1.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.check-input:checked ~ .check-circle2 {
+  background-image: url(../images/img-2.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.check-input:checked ~ .check-circle3 {
+  background-image: url(../images/img-3.svg);
+}
+
+.check-input:checked ~ .check-circle4 {
+  background-image: url(../images/img-4.svg);
+}
+
+.check-input:checked ~ .check-circle5 {
+  background-image: url(../images/img-5.svg);
+}
+
+.form-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 80px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: indigo;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
